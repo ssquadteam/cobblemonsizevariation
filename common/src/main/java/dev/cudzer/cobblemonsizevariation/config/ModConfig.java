@@ -23,7 +23,6 @@ public class ModConfig {
     public static String sizingAlgorithm;
 
     public static boolean biasSizeTowardAverage;
-    public static boolean enableEssenceRecipes;
 
     public static HashMap<String, Integer> perms = new HashMap<>();
 
@@ -65,7 +64,6 @@ public class ModConfig {
 
         defaultConfig.addProperty(ConfigKey.SIZING_ALGORITHM, "basic");
         defaultConfig.addProperty(ConfigKey.BIAS_SIZE_TOWARD_AVERAGE, false);
-        defaultConfig.addProperty(ConfigKey.ENABLE_ESSENCE_RECIPES, false);
     }
 
     private static void rewriteConfig(Gson gson, JsonObject defaultConfig, JsonObject finalConfig){
@@ -93,7 +91,6 @@ public class ModConfig {
         preventRidingMaxSize = finalConfiguration.get(ConfigKey.PREVENT_RIDING_MAX_SIZE).getAsFloat();
         sizingAlgorithm = finalConfiguration.get(ConfigKey.SIZING_ALGORITHM).getAsString();
         biasSizeTowardAverage = finalConfiguration.get(ConfigKey.BIAS_SIZE_TOWARD_AVERAGE).getAsBoolean();
-        enableEssenceRecipes = finalConfiguration.get(ConfigKey.ENABLE_ESSENCE_RECIPES).getAsBoolean();
         JsonArray permissionConfig = finalConfiguration.get(ConfigKey.PERMISSIONS).getAsJsonArray();
 
         perms.clear();

@@ -8,7 +8,6 @@
     "client.SummaryMixin"
   ],
   "mixins": [
-    "RecipeBlockerMixin"
   ],
   "injectors": {
     "defaultRequire": 1

@@ -15,9 +15,6 @@ public class ConfigKey {
     public static final String SIZE_DEFINITION_MAX = "max";
     public static final String SIZE_DEFINITION_COLOR = "color";
 
-    //ITEM RECIPES
-    public static final String ENABLE_ESSENCE_RECIPES = "enableEssenceRecipes";
-
     //PERMISSION KEYS
     public static final String PERMISSIONS = "permissions";
     public static final String POKESIZER_PERM_NAME = "cobblemonsizevariation.command.pokesizer";
